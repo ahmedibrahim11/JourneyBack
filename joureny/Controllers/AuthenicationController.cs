@@ -54,6 +54,7 @@ namespace joureny.Controllers
         public IHttpActionResult Login([FromBody] UserModel user)
         {
             var entity = _userRepo.First(new Specification<User>(s=>s.Email==user.UserName & s.Password==user.Password));
+            //test
 
             if (user != null)
             {
