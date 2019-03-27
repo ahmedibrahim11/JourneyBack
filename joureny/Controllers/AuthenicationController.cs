@@ -11,6 +11,7 @@ using System.Web.Http;
 
 namespace joureny.Controllers
 {
+    [RoutePrefix("auth")]
     public class AuthenicationController : ApiController
     {
         private readonly IRepository<User> _userRepo;
