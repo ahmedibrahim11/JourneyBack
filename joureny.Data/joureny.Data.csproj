@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\Feedback.cs" />
     <Compile Include="Entities\Trip.cs" />
     <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\User.cs" />
@@ -64,6 +65,14 @@
     <Compile Include="Migrations\201903261802466_v0.0.0.cs" />
     <Compile Include="Migrations\201903261802466_v0.0.0.Designer.cs">
       <DependentUpon>201903261802466_v0.0.0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903300904409_v0.0.chnagePassword.cs" />
+    <Compile Include="Migrations\201903300904409_v0.0.chnagePassword.Designer.cs">
+      <DependentUpon>201903300904409_v0.0.chnagePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903300936434_v0.0.mobile.cs" />
+    <Compile Include="Migrations\201903300936434_v0.0.mobile.Designer.cs">
+      <DependentUpon>201903300936434_v0.0.mobile.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,6 +84,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201903261802466_v0.0.0.resx">
       <DependentUpon>201903261802466_v0.0.0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903300904409_v0.0.chnagePassword.resx">
+      <DependentUpon>201903300904409_v0.0.chnagePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903300936434_v0.0.mobile.resx">
+      <DependentUpon>201903300936434_v0.0.mobile.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

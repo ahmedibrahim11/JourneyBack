@@ -134,11 +134,15 @@
     <Compile Include="App_Start\UnityWebApiActivator.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AuthenicationController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Dtos\UserDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\JwtManager.cs" />
+    <Compile Include="Models\ChangePasswordModel.cs" />
     <Compile Include="Models\CreateUserModel.cs" />
+    <Compile Include="Models\FeedbackModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -158,6 +162,10 @@
     <ProjectReference Include="..\joureny.Data\joureny.Data.csproj">
       <Project>{F9C27749-AC9B-470F-AB4D-1F99662B28C9}</Project>
       <Name>joureny.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\journey.Utilities\journey.Utilities.csproj">
+      <Project>{3B19734F-E972-4273-B3A4-E8295F1F1AC5}</Project>
+      <Name>journey.Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

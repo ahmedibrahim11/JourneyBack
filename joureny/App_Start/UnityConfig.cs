@@ -1,6 +1,7 @@
 using AutoMapper;
 using Framework.Data.EF;
 using joureny.Data;
+using journey.Utilities.Cryptography;
 using System;
 using System.Data.Entity;
 using Unity;
@@ -43,8 +44,11 @@ namespace joureny
             container.RegisterType<DbContext, JourenyContext>(new PerThreadLifetimeManager());
 
             container.RegisterType(typeof(IRepository<>), typeof(Repository<>), new TransientLifetimeManager());
-
+           
             container.RegisterType<IUnitOfWorkFactory, UnitOfWorkFactory>(new TransientLifetimeManager());
+
+            container.RegisterType<IEncryptionService, EncrptionService>(new TransientLifetimeManager());
+
         }
     }
 }

@@ -23,13 +23,16 @@ namespace joureny.Data
             modelBuilder.Entity<UserTrips>().HasKey(r => new { r.UserId, r.TripId });
             modelBuilder.Entity<User>().HasMany(r => r.UserTrips).WithRequired().HasForeignKey(r => r.UserId);
             modelBuilder.Entity<Trip>().HasMany(r => r.UserTrips).WithRequired().HasForeignKey(r => r.TripId);
+
+            modelBuilder.Entity<Feedback>().HasRequired<User>(u => u.User)
+                .WithMany(help => help.Feedbacks)
+                .HasForeignKey<long>(u => u.UserId); 
         }
 
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Trip> Trips { get; set; }
+        public virtual DbSet<Feedback> Helps { get; set; }
         public virtual DbSet<UserTrips> UserTrips { get; set; }
-
-
     }
 
 
