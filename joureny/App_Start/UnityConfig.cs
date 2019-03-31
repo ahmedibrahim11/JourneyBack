@@ -1,6 +1,8 @@
 using AutoMapper;
 using Framework.Data.EF;
 using joureny.Data;
+using joureny.Data.Entities;
+using joureny.Dtos;
 using journey.Utilities.Cryptography;
 using System;
 using System.Data.Entity;
@@ -37,6 +39,9 @@ namespace joureny
 
             var MapConfig = new MapperConfiguration(cfg =>
             {
+                cfg.CreateMap<User, UserDto>();
+                cfg.CreateMap<Trip, TripDto>();
+                cfg.CreateMap<UserTrips,UserTripDto>();
             });
 
             container.RegisterInstance(typeof(IConfigurationProvider), MapConfig);

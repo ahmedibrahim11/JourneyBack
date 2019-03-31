@@ -134,8 +134,11 @@
     <Compile Include="App_Start\UnityWebApiActivator.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AuthenicationController.cs" />
+    <Compile Include="Controllers\JourneyController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Dtos\TripDto.cs" />
     <Compile Include="Dtos\UserDto.cs" />
+    <Compile Include="Dtos\UserTripDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
