@@ -55,24 +55,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\BaseInfo.cs" />
+    <Compile Include="Entities\QuestionTab.cs" />
+    <Compile Include="Entities\QuestionType.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Feedback.cs" />
+    <Compile Include="Entities\Question.cs" />
+    <Compile Include="Entities\TripQuestion.cs" />
     <Compile Include="Entities\Trip.cs" />
     <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\UserAnswerQuestion.cs" />
     <Compile Include="Entities\UserTrips.cs" />
     <Compile Include="JourenyContext.cs" />
-    <Compile Include="Migrations\201903261802466_v0.0.0.cs" />
-    <Compile Include="Migrations\201903261802466_v0.0.0.Designer.cs">
-      <DependentUpon>201903261802466_v0.0.0.cs</DependentUpon>
+    <Compile Include="Migrations\201909081453475_V0.0.0.cs" />
+    <Compile Include="Migrations\201909081453475_V0.0.0.Designer.cs">
+      <DependentUpon>201909081453475_V0.0.0.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201903300904409_v0.0.chnagePassword.cs" />
-    <Compile Include="Migrations\201903300904409_v0.0.chnagePassword.Designer.cs">
-      <DependentUpon>201903300904409_v0.0.chnagePassword.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201903300936434_v0.0.mobile.cs" />
-    <Compile Include="Migrations\201903300936434_v0.0.mobile.Designer.cs">
-      <DependentUpon>201903300936434_v0.0.mobile.cs</DependentUpon>
+    <Compile Include="Migrations\201909101134186_v0.0.1.cs" />
+    <Compile Include="Migrations\201909101134186_v0.0.1.Designer.cs">
+      <DependentUpon>201909101134186_v0.0.1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,14 +84,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201903261802466_v0.0.0.resx">
-      <DependentUpon>201903261802466_v0.0.0.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201909081453475_V0.0.0.resx">
+      <DependentUpon>201909081453475_V0.0.0.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201903300904409_v0.0.chnagePassword.resx">
-      <DependentUpon>201903300904409_v0.0.chnagePassword.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201903300936434_v0.0.mobile.resx">
-      <DependentUpon>201903300936434_v0.0.mobile.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201909101134186_v0.0.1.resx">
+      <DependentUpon>201909101134186_v0.0.1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

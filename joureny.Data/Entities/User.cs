@@ -9,7 +9,7 @@ namespace joureny.Data.Entities
 
     public enum Gender
     {
-        male,female
+        male, female
     }
     public class User : Entity<long>
     {
@@ -17,16 +17,21 @@ namespace joureny.Data.Entities
         public string Email { get; set; }
         public string Password { get; set; }
         public int MobileNumber { get; set; }
-        public  string PasswordSalt { get; set; }
+        public string PasswordSalt { get; set; }
+        public bool HasRegistered { get; set; }
         public Role Role { get; set; }
         public Gender Gender { set; get; }
+        //public ICollection<BaseInfo> BaseInfo { get; set; }
 
         #region [Trip]
         public virtual ICollection<UserTrips> UserTrips { get; set; }
         #endregion
 
+        public ICollection<UserAnswerQuestion> UserAnswerQuestion { get; set; }
+
+
         #region [UserFeedback]
-        public virtual ICollection<Feedback>Feedbacks { get; set; }
+        public virtual ICollection<Feedback> Feedbacks { get; set; }
 
         #endregion
     }

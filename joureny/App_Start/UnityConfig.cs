@@ -3,6 +3,7 @@ using Framework.Data.EF;
 using joureny.Data;
 using joureny.Data.Entities;
 using joureny.Dtos;
+using joureny.Models;
 using journey.Utilities.Cryptography;
 using System;
 using System.Data.Entity;
@@ -42,6 +43,9 @@ namespace joureny
                 cfg.CreateMap<User, UserDto>();
                 cfg.CreateMap<Trip, TripDto>();
                 cfg.CreateMap<UserTrips,UserTripDto>();
+                cfg.CreateMap<Question, QuestionDto>();
+                cfg.CreateMap<UserAnswerQuestion, UserAnswerQuestionDto>();
+
             });
 
             container.RegisterInstance(typeof(IConfigurationProvider), MapConfig);

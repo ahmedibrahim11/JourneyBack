@@ -63,10 +63,10 @@ namespace joureny.Controllers
         [Route("login")]
         public IHttpActionResult Login([FromBody] UserModel user)
         {
-            var entity = _userRepo.First(new Specification<User>(s => s.Email == user.Email | s.MobileNumber == int.Parse(user.Email)));
+            var entity = _userRepo.First(new Specification<User>(s => s.Email == user.Email));
 
             var passwordHash = _encryptionService.CreatePasswordHash(user.Password, entity.PasswordSalt);
-            if (passwordHash != entity.Password)
+            if (user.Password != entity.Password)
                 return BadRequest();
 
             if (user != null)

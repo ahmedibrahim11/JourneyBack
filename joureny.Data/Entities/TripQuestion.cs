@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace joureny.Data.Entities
 {
-   public class UserTrips
+   public class TripQuestion
     {
-        public long  UserId{ get; set; }
-        public virtual User User { get; set; }
-
         public long TripId { get; set; }
         public virtual Trip Trip { get; set; }
+        public long QuestionId { get; set; }
+        public virtual Question Question { get; set; }
 
     }
 }

@@ -10,5 +10,8 @@ namespace joureny.Data.Entities
     {
         public string TripName { get; set; }
         public virtual ICollection<UserTrips> UserTrips { get; set; }
+        public ICollection<TripQuestion> TripQuestions { get; set; }
+
+
     }
 }

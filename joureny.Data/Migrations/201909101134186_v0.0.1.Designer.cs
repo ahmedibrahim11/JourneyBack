@@ -7,13 +7,13 @@ namespace joureny.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class v00mobile : IMigrationMetadata
+    public sealed partial class v001 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(v00mobile));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(v001));
         
         string IMigrationMetadata.Id
         {
-            get { return "201903300936434_v0.0.mobile"; }
+            get { return "201909101134186_v0.0.1"; }
         }
         
         string IMigrationMetadata.Source

@@ -27,7 +27,8 @@ namespace joureny.Helpers
                         {
                         new Claim(ClaimTypes.Name, user.UserName),
                         new Claim("Id", user.Id.ToString()),
-                        new Claim("Role", user.Role.ToString())
+                        new Claim("Role", user.Role.ToString()),
+                        new Claim("IsRegisterd", user.HasRegistered.ToString())
                         }),
 
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(symmetricKey), SecurityAlgorithms.HmacSha256Signature)

@@ -135,8 +135,12 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AuthenicationController.cs" />
     <Compile Include="Controllers\JourneyController.cs" />
+    <Compile Include="Controllers\QuestionController.cs" />
+    <Compile Include="Controllers\UserAnswerQuestionController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Dtos\QuestionDto.cs" />
     <Compile Include="Dtos\TripDto.cs" />
+    <Compile Include="Dtos\UserAnswerQuestionDto.cs" />
     <Compile Include="Dtos\UserDto.cs" />
     <Compile Include="Dtos\UserTripDto.cs" />
     <Compile Include="Global.asax.cs">
@@ -146,6 +150,7 @@
     <Compile Include="Models\ChangePasswordModel.cs" />
     <Compile Include="Models\CreateUserModel.cs" />
     <Compile Include="Models\FeedbackModel.cs" />
+    <Compile Include="Models\UserAnswerQuestionModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
