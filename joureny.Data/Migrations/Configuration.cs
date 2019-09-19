@@ -1036,303 +1036,304 @@ namespace joureny.Data.Migrations
                   {
                        Question=Question13,
                        Trip=trip
-                  },new TripQuestion()
-                  {
-                       Question=Question14,
-                       Trip=trip
-                  },
-
-                  new TripQuestion()
-                  {
-                       Question=Question15,
-                       Trip=trip
-                  },
-                  new TripQuestion()
-                  {
-                       Question=Question16,
-                       Trip=trip
-                  },
-                   new TripQuestion()
-                  {
-                       Question=Question17,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question18,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question19,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question20,
-                       Trip=trip
-                  },
-                    new TripQuestion()
-                  {
-                       Question=Question21,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question22,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question23,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question24,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question25,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question26,
-                       Trip=trip
-                  },
-                    new TripQuestion()
-                  {
-                       Question=Question27,
-                       Trip=trip
-                  },
-
-                  new TripQuestion()
-                  {
-                       Question=Question28,
-                       Trip=trip
-                  },
-                  new TripQuestion()
-                  {
-                       Question=Question29,
-                       Trip=trip
-                  },
-                   new TripQuestion()
-                  {
-                       Question=Question30,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question31,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question32,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question33,
-                       Trip=trip
-                  },
-                    new TripQuestion()
-                  {
-                       Question=Question34,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question35,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question36,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question37,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question38,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question39,
-                       Trip=trip
-                  },new TripQuestion()
-                  {
-                       Question=Question40,
-                       Trip=trip
-                  },
-
-                  new TripQuestion()
-                  {
-                       Question=Question41,
-                       Trip=trip
-                  },
-                  new TripQuestion()
-                  {
-                       Question=Question42,
-                       Trip=trip
-                  },
-                   new TripQuestion()
-                  {
-                       Question=Question43,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question44,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question45,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question46,
-                       Trip=trip
-                  },
-                    new TripQuestion()
-                  {
-                       Question=Question47,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question48,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question49,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question50,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question51,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question52,
-                       Trip=trip
-                  },
-                    new TripQuestion()
-                  {
-                       Question=Question53,
-                       Trip=trip
-                  },
-
-                  new TripQuestion()
-                  {
-                       Question=Question54,
-                       Trip=trip
-                  },
-
-                  new TripQuestion()
-                  {
-                       Question=Question55,
-                       Trip=trip
-                  },
-                  new TripQuestion()
-                  {
-                       Question=Question56,
-                       Trip=trip
-                  },
-                   new TripQuestion()
-                  {
-                       Question=Question57,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question58,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question59,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question60,
-                       Trip=trip
-                  },
-                    new TripQuestion()
-                  {
-                       Question=Question61,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question62,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question63,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question64,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question65,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question66,
-                       Trip=trip
-                  },new TripQuestion()
-                  {
-                       Question=Question67,
-                       Trip=trip
-                  },
-
-                  new TripQuestion()
-                  {
-                       Question=Question68,
-                       Trip=trip
-                  },
-                  new TripQuestion()
-                  {
-                       Question=Question69,
-                       Trip=trip
-                  },
-                   new TripQuestion()
-                  {
-                       Question=Question70,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question71,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question72,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question73,
-                       Trip=trip
-                  },  new TripQuestion()
-                  {
-                       Question=Question74,
-                       Trip=trip
-                  },
-
-                  new TripQuestion()
-                  {
-                       Question=Question75,
-                       Trip=trip
-                  },
-                  new TripQuestion()
-                  {
-                       Question=Question76,
-                       Trip=trip
-                  },
-                   new TripQuestion()
-                  {
-                       Question=Question77,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question78,
-                       Trip=trip
-                  }, new TripQuestion()
-                  {
-                       Question=Question79,
-                       Trip=trip
                   }
+                  //,new TripQuestion()
+                  //{
+                  //     Question=Question14,
+                  //     Trip=trip
+                  //},
+
+                  //new TripQuestion()
+                  //{
+                  //     Question=Question15,
+                  //     Trip=trip
+                  //},
+                  //new TripQuestion()
+                  //{
+                  //     Question=Question16,
+                  //     Trip=trip
+                  //},
+                  // new TripQuestion()
+                  //{
+                  //     Question=Question17,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question18,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question19,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question20,
+                  //     Trip=trip
+                  //},
+                  //  new TripQuestion()
+                  //{
+                  //     Question=Question21,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question22,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question23,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question24,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question25,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question26,
+                  //     Trip=trip
+                  //},
+                  //  new TripQuestion()
+                  //{
+                  //     Question=Question27,
+                  //     Trip=trip
+                  //},
+
+                  //new TripQuestion()
+                  //{
+                  //     Question=Question28,
+                  //     Trip=trip
+                  //},
+                  //new TripQuestion()
+                  //{
+                  //     Question=Question29,
+                  //     Trip=trip
+                  //},
+                  // new TripQuestion()
+                  //{
+                  //     Question=Question30,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question31,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question32,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question33,
+                  //     Trip=trip
+                  //},
+                  //  new TripQuestion()
+                  //{
+                  //     Question=Question34,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question35,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question36,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question37,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question38,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question39,
+                  //     Trip=trip
+                  //},new TripQuestion()
+                  //{
+                  //     Question=Question40,
+                  //     Trip=trip
+                  //},
+
+                  //new TripQuestion()
+                  //{
+                  //     Question=Question41,
+                  //     Trip=trip
+                  //},
+                  //new TripQuestion()
+                  //{
+                  //     Question=Question42,
+                  //     Trip=trip
+                  //},
+                  // new TripQuestion()
+                  //{
+                  //     Question=Question43,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question44,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question45,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question46,
+                  //     Trip=trip
+                  //},
+                  //  new TripQuestion()
+                  //{
+                  //     Question=Question47,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question48,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question49,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question50,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question51,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question52,
+                  //     Trip=trip
+                  //},
+                  //  new TripQuestion()
+                  //{
+                  //     Question=Question53,
+                  //     Trip=trip
+                  //},
+
+                  //new TripQuestion()
+                  //{
+                  //     Question=Question54,
+                  //     Trip=trip
+                  //},
+
+                  //new TripQuestion()
+                  //{
+                  //     Question=Question55,
+                  //     Trip=trip
+                  //},
+                  //new TripQuestion()
+                  //{
+                  //     Question=Question56,
+                  //     Trip=trip
+                  //},
+                  // new TripQuestion()
+                  //{
+                  //     Question=Question57,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question58,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question59,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question60,
+                  //     Trip=trip
+                  //},
+                  //  new TripQuestion()
+                  //{
+                  //     Question=Question61,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question62,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question63,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question64,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question65,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question66,
+                  //     Trip=trip
+                  //},new TripQuestion()
+                  //{
+                  //     Question=Question67,
+                  //     Trip=trip
+                  //},
+
+                  //new TripQuestion()
+                  //{
+                  //     Question=Question68,
+                  //     Trip=trip
+                  //},
+                  //new TripQuestion()
+                  //{
+                  //     Question=Question69,
+                  //     Trip=trip
+                  //},
+                  // new TripQuestion()
+                  //{
+                  //     Question=Question70,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question71,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question72,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question73,
+                  //     Trip=trip
+                  //},  new TripQuestion()
+                  //{
+                  //     Question=Question74,
+                  //     Trip=trip
+                  //},
+
+                  //new TripQuestion()
+                  //{
+                  //     Question=Question75,
+                  //     Trip=trip
+                  //},
+                  //new TripQuestion()
+                  //{
+                  //     Question=Question76,
+                  //     Trip=trip
+                  //},
+                  // new TripQuestion()
+                  //{
+                  //     Question=Question77,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question78,
+                  //     Trip=trip
+                  //}, new TripQuestion()
+                  //{
+                  //     Question=Question79,
+                  //     Trip=trip
+                  //}
               };
 
 

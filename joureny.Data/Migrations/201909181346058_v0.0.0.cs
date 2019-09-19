@@ -3,7 +3,7 @@ namespace joureny.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class V000 : DbMigration
+    public partial class v000 : DbMigration
     {
         public override void Up()
         {
@@ -29,6 +29,7 @@ namespace joureny.Data.Migrations
                         Password = c.String(),
                         MobileNumber = c.Int(nullable: false),
                         PasswordSalt = c.String(),
+                        HasRegistered = c.Boolean(nullable: false),
                         Role = c.Int(nullable: false),
                         Gender = c.Int(nullable: false),
                     })

@@ -68,13 +68,9 @@
     <Compile Include="Entities\UserAnswerQuestion.cs" />
     <Compile Include="Entities\UserTrips.cs" />
     <Compile Include="JourenyContext.cs" />
-    <Compile Include="Migrations\201909081453475_V0.0.0.cs" />
-    <Compile Include="Migrations\201909081453475_V0.0.0.Designer.cs">
-      <DependentUpon>201909081453475_V0.0.0.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201909101134186_v0.0.1.cs" />
-    <Compile Include="Migrations\201909101134186_v0.0.1.Designer.cs">
-      <DependentUpon>201909101134186_v0.0.1.cs</DependentUpon>
+    <Compile Include="Migrations\201909181346058_v0.0.0.cs" />
+    <Compile Include="Migrations\201909181346058_v0.0.0.Designer.cs">
+      <DependentUpon>201909181346058_v0.0.0.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,11 +80,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201909081453475_V0.0.0.resx">
-      <DependentUpon>201909081453475_V0.0.0.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201909101134186_v0.0.1.resx">
-      <DependentUpon>201909101134186_v0.0.1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201909181346058_v0.0.0.resx">
+      <DependentUpon>201909181346058_v0.0.0.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
