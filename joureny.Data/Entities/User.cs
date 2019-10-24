@@ -21,6 +21,7 @@ namespace joureny.Data.Entities
         public bool HasRegistered { get; set; }
         public Role Role { get; set; }
         public Gender Gender { set; get; }
+        public string  PushToken { get; set; }
         //public ICollection<BaseInfo> BaseInfo { get; set; }
 
         #region [Trip]
@@ -28,6 +29,7 @@ namespace joureny.Data.Entities
         #endregion
 
         public ICollection<UserAnswerQuestion> UserAnswerQuestion { get; set; }
+        //public virtual ICollection<User> Connections { get; set; }
 
 
         #region [UserFeedback]

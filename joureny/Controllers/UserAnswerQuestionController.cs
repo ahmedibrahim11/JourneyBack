@@ -52,8 +52,11 @@ namespace joureny.Controllers
                         return NotFound();
                     user.HasRegistered = true;
                 }
+
             }
-            return Ok();
+            var _userAnswers = _userAnswerQuestionRepo.GetAll<UserAnswerQuestionDto>().Where(s => s.userId == userId).ToList();
+            return Ok(_userAnswers);
+
         }
 
         [HttpGet]
@@ -68,5 +71,32 @@ namespace joureny.Controllers
             }
             return BadRequest();
         }
+
+        [HttpPost]
+        [Route("EditUserAnswers/{userId:long}")]
+        public IHttpActionResult Edit([FromBody]List<UserAnswerQuestionModel> answers, long userId)
+        {
+            if (answers != null)
+            {
+                using (var uow = _unitOfwork.Create())
+                {
+                    foreach (var answer in answers)
+                    {
+                        var entity = new UserAnswerQuestion()
+                        {
+                            QuestionId = answer.QuestionId,
+                            UserId = answer.UserId,
+                            Value = answer.Value
+                        };
+
+                        _userAnswerQuestionRepo.AddOrUpdate(entity);
+                    }
+                }
+            }
+            var _userAnswers = _userAnswerQuestionRepo.GetAll<UserAnswerQuestionDto>().Where(s => s.userId == userId).ToList();
+            return Ok(_userAnswers);
+        }
+
+
     }
 }

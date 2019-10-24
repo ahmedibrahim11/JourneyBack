@@ -126,7 +126,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
@@ -134,10 +136,13 @@
     <Compile Include="App_Start\UnityWebApiActivator.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AuthenicationController.cs" />
+    <Compile Include="Controllers\ConnectionController.cs" />
     <Compile Include="Controllers\JourneyController.cs" />
     <Compile Include="Controllers\QuestionController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\UserAnswerQuestionController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Dtos\ConnectionDto.cs" />
     <Compile Include="Dtos\QuestionDto.cs" />
     <Compile Include="Dtos\TripDto.cs" />
     <Compile Include="Dtos\UserAnswerQuestionDto.cs" />
@@ -146,16 +151,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\ExpoPushHelper.cs" />
     <Compile Include="Helpers\JwtManager.cs" />
     <Compile Include="Models\ChangePasswordModel.cs" />
     <Compile Include="Models\CreateUserModel.cs" />
     <Compile Include="Models\FeedbackModel.cs" />
+    <Compile Include="Models\SearchModel.cs" />
     <Compile Include="Models\UserAnswerQuestionModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\JourneyappFrontend - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

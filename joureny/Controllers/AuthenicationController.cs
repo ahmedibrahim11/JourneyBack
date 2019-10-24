@@ -18,13 +18,15 @@ namespace joureny.Controllers
     {
         private readonly IRepository<User> _userRepo;
         private readonly IUnitOfWorkFactory _unitOfWork;
+        private readonly IRepository<UserAnswerQuestion> _userAnswers;
 
         private readonly IEncryptionService _encryptionService;
 
-        public AuthenicationController(IRepository<User> userRepo, IUnitOfWorkFactory unitOfWork, IEncryptionService encryptionService)
+        public AuthenicationController(IRepository<User> userRepo, IUnitOfWorkFactory unitOfWork, IEncryptionService encryptionService, IRepository<UserAnswerQuestion> userAnswers)
         {
             _userRepo = userRepo;
             _unitOfWork = unitOfWork;
+            _userAnswers = userAnswers;
             _encryptionService = encryptionService;
         }
 
@@ -71,9 +73,17 @@ namespace joureny.Controllers
 
             if (user != null)
             {
+                using (var uow=_unitOfWork.Create())
+                {
+                    entity.PushToken = user.TokenPush;
+                }
+                var job = _userAnswers.GetAll<UserAnswerQuestionDto>().Where(s => s.userId == entity.Id && s.QuestionId == 47).ToList().FirstOrDefault().Value;
                 return Ok(
-                     new { token = JWTManager.GenerateToken(entity) }
-                    );
+                     new {
+                         token = JWTManager.GenerateToken(entity),
+                         name = entity.UserName,
+                         jobtitle = job
+                     });
             }
 
             else
@@ -86,21 +96,23 @@ namespace joureny.Controllers
         [Route("changepassword/{Id:long}")]
         public IHttpActionResult ChangePassword(long Id, ChangePasswordModel model)
         {
-            var mbership = _userRepo.First(new Specification<User>(u => u.Id == Id));
-            if (mbership == null)
-                return NotFound();
-            var passwordHash = _encryptionService.CreatePasswordHash(model.OldPassword, mbership.PasswordSalt);
-            if (passwordHash != mbership.Password)
-                return BadRequest("Old Password is inCorrect");
-
-            using (var uow = _unitOfWork.Create())
+            using (var uow=_unitOfWork.Create())
             {
-                var enSaltKey = _encryptionService.CreateSaltKey(4);
-                var enPassword = _encryptionService.CreatePasswordHash(model.NewPassword, enSaltKey);
-                mbership.PasswordSalt = enSaltKey;
-                mbership.Password = enPassword;
+                var user = _userRepo.First(new Specification<User>(u => u.Id == Id));
+                if (user == null)
+                    return NotFound();
+
+                if (user.Password == model.OldPassword)
+                {
+                    user.Password = model.NewPassword;
+                }
+                else
+                {
+                    return BadRequest();
+                }
+                return Ok();
             }
-            return Ok();
+            
         }
 
         [HttpGet]

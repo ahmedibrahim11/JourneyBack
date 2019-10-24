@@ -34,6 +34,8 @@ namespace joureny.Controllers
                     Message = model.Message,
                     UserId=userId
                 };
+
+                _helpRepo.Add(feedback);
             }
             return Ok();
         }

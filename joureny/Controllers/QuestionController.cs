@@ -27,7 +27,7 @@ namespace joureny.Controllers
         [Route("allQuestions/{journeyId:long}")]
         public IHttpActionResult GetAllQuestions(long journeyId)
         {
-            var Questions = _questionRepo.GetAll<QuestionDto>(new Specification<Question>(s=>s.TripQuestions.Any(t=>t.TripId==journeyId))).Where(t=>t.IsTop==false).ToList();
+            var Questions = _questionRepo.GetAll<QuestionDto>(new Specification<Question>(s=>s.TripQuestions.Any(t=>t.TripId==journeyId))).ToList();
             return Ok(Questions);
         }
         [HttpGet]

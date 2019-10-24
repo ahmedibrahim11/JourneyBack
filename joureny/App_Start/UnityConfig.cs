@@ -45,6 +45,8 @@ namespace joureny
                 cfg.CreateMap<UserTrips,UserTripDto>();
                 cfg.CreateMap<Question, QuestionDto>();
                 cfg.CreateMap<UserAnswerQuestion, UserAnswerQuestionDto>();
+                cfg.CreateMap<UserAnswerQuestionModel, UserAnswerQuestionDto>();
+
 
             });
 
