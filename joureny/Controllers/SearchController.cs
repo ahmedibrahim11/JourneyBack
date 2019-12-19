@@ -1,5 +1,6 @@
 ﻿using Framework.Data.EF;
 using joureny.Data.Entities;
+using joureny.Dtos;
 using joureny.Models;
 using System.Collections.Generic;
 using System.Linq;
@@ -67,6 +68,27 @@ namespace joureny.Controllers
                 }
             }
             return Ok(UsersId);
+
+        }
+        [HttpPost]
+        [Route("getSearchBarResult")]
+        public IHttpActionResult GetSearchBarResult(string SearchBarText)
+        {
+            string[] SearchBarWords = SearchBarText.Split(' ');
+            var users = _userRepo.GetAll<UsersWithAnswersDto>().ToList();
+            List<long> UsersId = new List<long>();
+            foreach (var Word in SearchBarWords)
+            {
+                UsersId.AddRange(users.Where(u => u.UserName.Contains(Word)
+                                           || u.Email.Contains(Word)
+                                           || u.MobileNumber.ToString().Contains(Word)
+                                           || u.Answers.Where(ans => ans.Contains(Word)).ToList().Count > 0)
+                                           .Select(s => s.Id).ToList());
+            }
+            
+               
+        
+            return Ok(UsersId.Distinct().ToList());
 
         }
     }

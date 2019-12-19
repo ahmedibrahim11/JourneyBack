@@ -3,7 +3,7 @@ namespace joureny.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class v000 : DbMigration
+    public partial class V000 : DbMigration
     {
         public override void Up()
         {
@@ -32,6 +32,7 @@ namespace joureny.Data.Migrations
                         HasRegistered = c.Boolean(nullable: false),
                         Role = c.Int(nullable: false),
                         Gender = c.Int(nullable: false),
+                        PushToken = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -98,6 +99,17 @@ namespace joureny.Data.Migrations
                 .Index(t => t.UserId)
                 .Index(t => t.TripId);
             
+            CreateTable(
+                "dbo.UserConnections",
+                c => new
+                    {
+                        Id = c.Long(nullable: false, identity: true),
+                        UserId = c.Long(nullable: false),
+                        ConnectionId = c.Long(nullable: false),
+                        ConnectionStatus = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
         }
         
         public override void Down()
@@ -116,6 +128,7 @@ namespace joureny.Data.Migrations
             DropIndex("dbo.UserAnswerQuestions", new[] { "UserId" });
             DropIndex("dbo.UserAnswerQuestions", new[] { "QuestionId" });
             DropIndex("dbo.Feedbacks", new[] { "UserId" });
+            DropTable("dbo.UserConnections");
             DropTable("dbo.UserTrips");
             DropTable("dbo.Trips");
             DropTable("dbo.TripQuestions");

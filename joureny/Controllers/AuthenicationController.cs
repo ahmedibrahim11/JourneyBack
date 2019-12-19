@@ -77,12 +77,10 @@ namespace joureny.Controllers
                 {
                     entity.PushToken = user.TokenPush;
                 }
-                var job = _userAnswers.GetAll<UserAnswerQuestionDto>().Where(s => s.userId == entity.Id && s.QuestionId == 47).ToList().FirstOrDefault().Value;
                 return Ok(
                      new {
                          token = JWTManager.GenerateToken(entity),
-                         name = entity.UserName,
-                         jobtitle = job
+                         name = entity.UserName
                      });
             }
 

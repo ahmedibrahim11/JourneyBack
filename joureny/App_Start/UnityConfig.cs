@@ -7,6 +7,7 @@ using joureny.Models;
 using journey.Utilities.Cryptography;
 using System;
 using System.Data.Entity;
+using System.Linq;
 using Unity;
 using Unity.Lifetime;
 
@@ -46,6 +47,8 @@ namespace joureny
                 cfg.CreateMap<Question, QuestionDto>();
                 cfg.CreateMap<UserAnswerQuestion, UserAnswerQuestionDto>();
                 cfg.CreateMap<UserAnswerQuestionModel, UserAnswerQuestionDto>();
+                
+                cfg.CreateMap<User, UsersWithAnswersDto>().ForMember(_event => _event.Answers, entity => entity.MapFrom(x => x.UserAnswerQuestion.Select(y => y.Value).ToList())); ;
 
 
             });

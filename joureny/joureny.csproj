@@ -147,6 +147,7 @@
     <Compile Include="Dtos\TripDto.cs" />
     <Compile Include="Dtos\UserAnswerQuestionDto.cs" />
     <Compile Include="Dtos\UserDto.cs" />
+    <Compile Include="Dtos\UsersWithAnswersDto.cs" />
     <Compile Include="Dtos\UserTripDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
